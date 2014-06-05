@@ -1,0 +1,34 @@
+
+<html>
+
+	<head><title>number 2</title></head>
+	
+	<body>
+		<form "myName">
+		<input type="text" id="teststring" name="blurgh" columns="30" onkeyup="validateInputByLength('input#teststring','span#warn',8)"/> <span id="warn">  </span>
+		</form>
+	
+	</body>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+function validateInputByLength (inputBoxID, warnSpanID, lngthToCheck)
+{
+	//grab the input from the user and check its length	
+	if ($(inputBoxID).val().length < lngthToCheck )
+	{
+		//change the warning to be blank
+		$(warnSpanID).text("");
+		
+	}
+	else
+	{
+		//change the warning next to the box to tell user
+		$(warnSpanID).text("input needs to be < " + lngthToCheck + " Characters");			
+	}
+			
+}
+		
+	</script>
+	
+</html>
