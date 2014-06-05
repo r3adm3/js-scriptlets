@@ -1,0 +1,69 @@
+<html>
+
+	<head><title>don't care</title></head>
+ 	<body> 
+		<select id="maintday">
+			<option value="5">Day 5</option>
+			<option value="6">Day 6</option>
+			<option value="7">Day 7</option>
+			<option value="8">Day 8</option>
+			<option value="9">Day 9</option>
+			<option value="10">Day 10</option>
+		
+		</select>
+
+
+	</body>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		
+		$(document).ready(function () {
+		
+				console.log("I'm ready now");
+				SelectRandomOption2("maintday");
+			}
+		)
+		
+
+		function SelectRandomOption(id) {
+			console.log(id);
+			
+			var dayOptions = $("select#maintday option");
+			
+			var randomNumber = getRandomInt(5, 10);
+			
+			//select the right option based on the random number.
+			//and then I'm going to change it to be the one selected. 
+			$("select#maintday option[value='" + randomNumber + "'").prop("selected" ,true)
+			
+			console.log(randomNumber);
+			
+			
+		}
+
+		function SelectRandomOption2(id)
+		{
+			//grabs the select dropdown that we want to play with
+			var optionsArray = $("select#" + id + "  option");
+		
+			//gets the length of the array
+			var ArrayLength = optionsArray.length;
+			
+			//generate a random number between 0 and length of the array (take away 1 as its a zero-based list)
+			var randomNumber = getRandomInt(0, ArrayLength - 1 );
+			
+			//grabs the value of the option from the random row we've picked....
+			var pick = $("select#" + id + " option")[randomNumber].value;
+			
+			// ...so that we can now actively make it the selection shown to user. 
+			$("select#maintday option[value='" + pick + "'").prop("selected" ,true)
+						
+		}
+		
+		//generates a random int. 
+		function getRandomInt(min, max) {
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+		
+	</script>
+</html>
