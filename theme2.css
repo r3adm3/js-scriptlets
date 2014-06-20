@@ -9,6 +9,29 @@ a{
 	color: #638E00;
 }
 
+form{
+	width:300px;
+	border: 1px solid black;
+}
+
+label{
+	display:block;
+	float:left;
+	clear:left;
+	text-align:right;
+	width: 75px;
+	margin-right: 5px;
+}
+
+input, select {
+	width: 185px;
+	
+}
+
+input:focus, select:focus, textarea:focus{
+	border:1px solid #638E00;
+}
+
 /* settings for the main content text box */
 #maintext {
 	padding: 10px;
