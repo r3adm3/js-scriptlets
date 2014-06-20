@@ -1,0 +1,61 @@
+/* general settings */
+body{
+	font-family: 'Verdana', 'Lucida Grande', sans-serif;
+	font-size:14px;
+}
+
+/* links */
+a{
+	color: #638E00;
+}
+
+/* settings for the main content text box */
+#maintext {
+	padding: 10px;
+}
+
+/* makes the nice green box around the content and centers it. */
+#contentwrapper {
+	border-left: 2px solid green;
+	border-right: 2px solid green;
+	border-bottom: 2px solid green;
+	min-width: 450px;
+	max-width: 700px;
+	margin: 20 auto;
+}
+
+/* title text, in the green bar */
+#heading{
+	font-size:24px;
+	margin-bottom: 10px;
+	background-color: green;
+	color:white;
+	padding:5px;
+}
+
+/* sub-title, bit more detail in grey */
+#subheading{
+	font-size:16px;
+	color:#6D7073;
+	padding:10px;
+	
+}
+
+/* any help text that can go green, make it stand out. */
+.calloutGreen {
+	background-color: #f6faf4;
+	border-left:3px solid #9cde5b;
+	margin:25px;
+	padding: 15px;
+	width:75%;
+}
+
+/* any help text that can go orange, make it stand out. */
+.calloutOrange{
+	background-color: #fcf8f2;
+	border-left:3px solid #f0ad4e;
+	margin:25px;
+	padding: 15px;
+	width:75%;
+}
+
