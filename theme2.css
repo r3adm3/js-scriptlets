@@ -9,11 +9,12 @@ a{
 	color: #638E00;
 }
 
+/* bit of form styling.*/
 form{
 	width:300px;
-	border: 1px solid black;
 }
 
+/*label styling for each of the text labels of the input box */
 label{
 	display:block;
 	float:left;
@@ -23,11 +24,14 @@ label{
 	margin-right: 5px;
 }
 
-input, select {
+/* force fonts in form inputs */
+input, select, textarea {
 	width: 185px;
+	font-family: 'Segoe UI', 'Verdana', sans-serif;
 	
 }
 
+/* puts the nice green halo when inputting */
 input:focus, select:focus, textarea:focus{
 	border:1px solid #638E00;
 }
