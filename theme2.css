@@ -27,8 +27,8 @@ label{
 /* force fonts in form inputs */
 input, select, textarea {
 	width: 185px;
-	font-family: 'Segoe UI', 'Verdana', sans-serif;
-	
+	font-family: 'Segoe UI', 'Verdana', sans-serif:5px;
+	margin-bottom:2px;
 }
 
 /* puts the nice green halo when inputting */
